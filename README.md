@@ -1,3 +1,6 @@
+# this is repo uses a modified version of openfortivpn !!!!
+
+
 # openwrt-openfortivpn
 OpenWRT package for [openfortivpn: A Fortinet (and Ruijie) compatible client for PPP+SSL VPN tunnel services](https://github.com/adrienverge/openfortivpn)
 
