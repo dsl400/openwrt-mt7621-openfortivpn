@@ -1,18 +1,17 @@
-
 include $(TOPDIR)/rules.mk
 
-PKG_SOURCE_URL:=https://github.com/dsl400/openfortivpn
-PKG_SOURCE_VERSION:=467cab7
-
 PKG_NAME:=openfortivpn
-PKG_VERSION:=1.7.1_git$(PKG_SOURCE_VERSION)
+PKG_VERSION:=1.7.1
 PKG_RELEASE:=1
 PKG_LICENSE:=GPLv3
 PKG_LICENSE_FILES:=LICENSE
 
+# Use your repository and branch/commit
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_URL:=https://github.com/dsl400/openfortivpn.git
+PKG_SOURCE_VERSION:=82b642bcbeed8b148ea020dd71119571d181627c  # Replace with the correct commit hash if necessary
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_SOURCE_SUBDIR).tar.gz
-PKG_SOURCE_PROTO:=git
 
 include $(INCLUDE_DIR)/package.mk
 
