@@ -10,7 +10,7 @@ Example for ar71xx and trunk.
 wget https://downloads.openwrt.org/releases/22.03.0/targets/ramips/mt7621/openwrt-sdk-22.03.0-ramips-mt7621_gcc-11.2.0_musl.Linux-x86_64.tar.xz
 tar -xf openwrt-sdk-22.03.0-ramips-mt7621_gcc-11.2.0_musl.Linux-x86_64.tar.xz
 cd openwrt-sdk-22.03.0-ramips-mt7621_gcc-11.2.0_musl.Linux-x86_64/package
-git clone https://github.com/dsl400/openwrt-mt7621-openfortivpn openfortivpn
+git clone https://github.com/adrienverge/openwrt-mt7621-openfortivpn openfortivpn
 cd ..
 ./scripts/feeds update base
 ./scripts/feeds install libopenssl resolveip ppp

@@ -1,15 +1,15 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=openfortivpn
-PKG_VERSION:=1.7.1
+PKG_VERSION:=1.23.1
 PKG_RELEASE:=1
 PKG_LICENSE:=GPLv3
 PKG_LICENSE_FILES:=LICENSE
 
 # Use your repository and branch/commit
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/dsl400/openfortivpn.git
-PKG_SOURCE_VERSION:=82b642bcbeed8b148ea020dd71119571d181627c  # Replace with the correct commit hash if necessary
+PKG_SOURCE_URL:=https://github.com/adrienverge/openfortivpn.git
+PKG_SOURCE_VERSION:=a011b5c916075bd240db6a03c02eac95baf09ad8  # Replace with the correct commit hash if necessary
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_SOURCE_SUBDIR).tar.gz
 
@@ -19,7 +19,7 @@ define Package/openfortivpn
   SECTION:=net
   CATEGORY:=Network
   TITLE:=A Fortinet compatible client for PPP+SSL VPN tunnel services
-  URL:=https://github.com/dsl400/openfortivpn
+  URL:=https://github.com/adrienverge/openfortivpn
   SUBMENU:=VPN
   DEPENDS:=+libopenssl +resolveip +ppp 
 endef
