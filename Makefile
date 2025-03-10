@@ -8,8 +8,8 @@ PKG_LICENSE_FILES:=LICENSE
 
 # Use your repository and branch/commit
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/adrienverge/openfortivpn.git
-PKG_SOURCE_VERSION:=a011b5c916075bd240db6a03c02eac95baf09ad8  # Replace with the correct commit hash if necessary
+PKG_SOURCE_URL:=https://github.com/dsl400/openfortivpn.git
+PKG_SOURCE_VERSION:=5f02962722dd591c3f9c841f5e0837cb0999a041  # Replace with the correct commit hash if necessary
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_SOURCE_SUBDIR).tar.gz
 
